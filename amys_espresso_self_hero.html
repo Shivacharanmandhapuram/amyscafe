@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Amy’s Espresso Self Cafe &amp; Eatery</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800;900&amp;family=Manrope:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "parchment": "#F5F5DC",
+                        "espresso": "#2B1B17",
+                        "crema": "#D4AF37",
+                        "primary": "#2B1B17",
+                        "on-primary": "#F5F5DC",
+                        "surface": "#F5F5DC",
+                        "on-surface": "#2B1B17",
+                        "secondary": "#D4AF37",
+                    },
+                    fontFamily: {
+                        "headline": ["Epilogue", "sans-serif"],
+                        "body": ["Manrope", "sans-serif"],
+                        "label": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0rem", "lg": "0rem", "xl": "0rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #F5F5DC;
+            color: #2B1B17;
+        }
+        .text-huge {
+            font-size: clamp(3rem, 12vw, 10rem);
+            line-height: 0.85;
+        }
+        .text-editorial {
+            font-size: clamp(2.5rem, 10vw, 8rem);
+            line-height: 0.9;
+        }
+    </style>
+</head>
+<body class="font-body selection:bg-crema selection:text-espresso">
+<!-- Navigation -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-6 md:px-12 py-8 bg-parchment/90 backdrop-blur-sm border-b border-espresso/5">
+<div class="text-xl font-black text-espresso tracking-tighter font-headline uppercase">
+        Amy’s Espresso Self
+    </div>
+<div class="hidden lg:flex gap-10 items-center">
+<a class="font-headline text-xs font-bold uppercase tracking-widest text-espresso hover:text-crema transition-colors" href="#">Menu</a>
+<a class="font-headline text-xs font-bold uppercase tracking-widest text-espresso hover:text-crema transition-colors" href="#">Find Us</a>
+<a class="font-headline text-xs font-bold uppercase tracking-widest text-espresso hover:text-crema transition-colors" href="#">Story</a>
+</div>
+<button class="bg-espresso text-parchment px-6 py-2.5 font-headline text-xs font-bold uppercase tracking-widest hover:bg-crema hover:text-espresso transition-all">
+        Order Now
+    </button>
+</nav>
+<main>
+<!-- Section 1: Hero -->
+<section class="min-h-screen pt-32 pb-20 px-6 md:px-12 flex flex-col justify-center border-b border-espresso/10 bg-parchment">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Left Side: Content -->
+<div class="lg:col-span-7 z-10">
+<p class="font-label text-crema tracking-[0.4em] mb-6 text-xs font-bold uppercase">Malabar, Florida</p>
+<h1 class="font-headline text-huge font-black tracking-tighter text-espresso mb-12 uppercase">
+                MALABAR’S <br/> FAVORITE <br/> <span class="text-crema">COFFEE</span>
+</h1>
+<div class="max-w-md">
+<p class="text-lg md:text-xl text-espresso/70 font-medium mb-10 leading-relaxed">
+                    4.9⭐ rated nitro cold brew &amp; artisan breakfast—served fresh from our signature mobile trailer.
+                </p>
+<button class="group flex items-center gap-4 bg-espresso text-parchment px-10 py-5 font-headline text-sm font-bold uppercase tracking-widest hover:bg-crema hover:text-espresso transition-all">
+                    View Menu
+                    <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Right Side: Image -->
+<div class="lg:col-span-5 relative">
+<div class="aspect-[4/5] bg-espresso/5 overflow-hidden">
+<img alt="Modern coffee trailer" class="w-full h-full object-cover grayscale contrast-125 brightness-90 hover:grayscale-0 transition-all duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5NQQb_Ovs_iDYKTKzfIA0YGRa1LGdEzXYjF8c6y0fJiBNQllwbpfS3vujotTV6AbHsrfcBB3fmYzlIctwXgVCvFXX04DBZ5RLyginpZBlr-F9t3br5D9kDXAcEa_xbHCWrz4CVJiO1vFGmpB6SCnynZqvV6uMJEGfmDPJT6ur5BWhgghuC9jIiQOmGiQ71EUFCBGMIYyT3ZAN8H0shDILNGv8-rmU0IpMcBZEhF2sZaJJsUqEmx4778mynVIfz1q85SIgy12jEsU"/>
+</div>
+<!-- Badge positioned near the image as per reference -->
+<div class="absolute -bottom-6 right-0 bg-crema text-espresso px-8 py-6 font-headline font-black text-2xl shadow-xl">
+                SINCE 2021
+            </div>
+</div>
+</div>
+</section>
+<!-- Section 2: Menu Highlights -->
+<section class="py-24 px-6 md:px-12">
+<div class="flex flex-col md:flex-row justify-between items-baseline mb-20">
+<h2 class="font-headline text-editorial font-black uppercase tracking-tighter leading-none mb-4 md:mb-0">
+            DAILY <span class="text-crema">RITUALS</span>
+</h2>
+<p class="font-label text-espresso/40 tracking-[0.3em] uppercase text-xs">Signature Menu Highlights</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<!-- Item 1 -->
+<div class="group">
+<div class="aspect-square mb-8 overflow-hidden bg-espresso/5">
+<img alt="Nitro Cold Brew" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1NLJoJmGxDHmcejaI-4XViJPSH9OoWg5V2lEQXgjE5uKkmeump8BZPZ2OLDTXBBYANcki28f0fDxzCflDwnWT4orGNITg2RIufyYxWBKkPe8CxKVrTZD20KuBf1EoRVinES7oIRRmw1aBUuKCiSFLApa6BoIYjOx1fQGdrV0t1bavr2mPdsqm1SlbNQdxeb9-Q98maNTqyqN0HDxh8EMdOabDW8SthE2QQI2MEmf7VTUbfa0WNAhO-Xwq63623BpTyAvYDMyfMiA"/>
+</div>
+<div class="flex justify-between items-end border-b border-espresso pb-4">
+<h3 class="font-headline text-2xl font-bold uppercase tracking-tight">Nitro Cold Brew</h3>
+<span class="font-headline text-xl text-crema font-bold">$6.00</span>
+</div>
+<p class="mt-4 text-xs font-bold uppercase tracking-widest text-espresso/60">Triple Filtered • Velvety Texture</p>
+</div>
+<!-- Item 2 -->
+<div class="group">
+<div class="aspect-square mb-8 overflow-hidden bg-espresso/5">
+<img alt="Everything Bagel" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABNKwfJCYHbA3_I07xHjrwlyZq5Pe7VGodrE5SC4atQgzisQNhP4VUUDvwwE9shTQoY4S1M6M0mUuep7bfMkF_8lhuBJk7pKYCwsVHVrvNqWg_EF93hVa7w8fGApx2Qq8QKpBeh399fpUt0NuzmMtJDyhtyUw6oshcb10yMY3oCwMl83-cWSkvWl3fL-xMYl2zUZprMafeoXLYwU4ljQNELuGyej3fcAe8ZqAMbn0c4Br9Sm5IaD_IsIcJz_lB3HgrW3UajpXUNPQ"/>
+</div>
+<div class="flex justify-between items-end border-b border-espresso pb-4">
+<h3 class="font-headline text-2xl font-bold uppercase tracking-tight">Everything Bagel</h3>
+<span class="font-headline text-xl text-crema font-bold">$8.00</span>
+</div>
+<p class="mt-4 text-xs font-bold uppercase tracking-widest text-espresso/60">House Toasted • Whipped Schmear</p>
+</div>
+<!-- Item 3 -->
+<div class="group">
+<div class="aspect-square mb-8 overflow-hidden bg-espresso/5">
+<img alt="Breakfast Burrito" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_bNfl6F-30gD37R7PfBg5deCxHQ2GT0hPa_8LC6ucEUan2vfn2HqehyEUdWeHo1faHCXXZbi6RoZ2bcwRibALaZv4mqqcPtrveNgb0QyOxQIp70y8gDgenc7VfPZa371diTzaO1aFi5MNYMuYrpKltlMuIIYhLWkw4gQqqzjj0q2Qy9K-Xwa9j-05O52Ndvi27zkKu4_pEGpOk2-mJLiTM7_MOUW_oxVFXnBNibBOb4SI-xDGSj2MdLDglCSv7dzBD8kTiXelp2A"/>
+</div>
+<div class="flex justify-between items-end border-b border-espresso pb-4">
+<h3 class="font-headline text-2xl font-bold uppercase tracking-tight">Breakfast Burrito</h3>
+<span class="font-headline text-xl text-crema font-bold">$12.00</span>
+</div>
+<p class="mt-4 text-xs font-bold uppercase tracking-widest text-espresso/60">Farm Eggs • Chorizo • Fresh Salsa</p>
+</div>
+</div>
+</section>
+<!-- Section 3: Statement -->
+<section class="py-40 bg-espresso text-parchment overflow-hidden">
+<div class="px-6 md:px-12">
+<h2 class="font-headline text-huge font-black leading-[0.8] mb-16 tracking-tighter uppercase text-center md:text-left">
+            ONLY FRESH.<br/> NO SHORTCUTS.
+        </h2>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-end">
+<p class="text-xl md:text-3xl font-light leading-relaxed text-parchment/60 max-w-2xl">
+                We believe the first sip of the day should be a revelation. Our beans are roasted locally in small batches, and our kitchen operates with a strict "made-to-order" philosophy. No heat lamps, no premade wraps. Just alchemy.
+            </p>
+<div class="flex flex-col items-center lg:items-end">
+<div class="w-32 h-32 border border-crema/30 rounded-full flex items-center justify-center mb-8 rotate-12">
+<span class="font-headline text-crema text-xs tracking-widest uppercase font-bold text-center p-4">Guaranteed Quality</span>
+</div>
+<p class="font-label tracking-[0.4em] uppercase text-crema text-xs font-bold">Integrity Index: 100%</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Split Section -->
+<section class="grid grid-cols-1 lg:grid-cols-2 min-h-screen border-b border-espresso/10">
+<div class="relative bg-espresso/5 border-r border-espresso/10 overflow-hidden">
+<img alt="Artisan Detail" class="w-full h-full object-cover grayscale brightness-75 mix-blend-multiply" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuvyUF16hzFAjvXZYetZn39eNr74ESJv_18X_UAHz7iCVWY0QIvaNtQX1Xl-i7oX0MRx5tJCzKRqYBb_fRG9DDIYSYn4WA1fD1NF6DklJxP5trUEVwa8nMN2wJxKGuUnnwzDfrNygJyMid4EVXJvYoxt2xc1CB_j3iTy2xe4TfHZ1oSRawJ2ecXhjGfpx_VL2pSo-N7KhnVkEuf2gC-ixGTe1VdqKZAaQWq6_oSqeOnUIn8TyxDtnZggI_mpxyZMxWXQ-hBxP6mzI"/>
+<div class="absolute inset-0 flex items-center justify-center p-12">
+<h3 class="font-headline text-editorial font-black uppercase text-parchment leading-none text-center drop-shadow-2xl">
+                THE <br/> BOARD
+            </h3>
+</div>
+</div>
+<div class="p-12 md:p-24 flex flex-col justify-center bg-parchment">
+<ul class="space-y-16">
+<li class="group flex flex-col md:flex-row justify-between md:items-end gap-2 border-b border-espresso/10 pb-6">
+<div>
+<span class="font-headline text-3xl font-bold uppercase tracking-tight group-hover:text-crema transition-colors">The Malabar Mist</span>
+<p class="font-body text-espresso/50 uppercase text-xs tracking-widest mt-2">White espresso, honey, oat milk</p>
+</div>
+<span class="font-headline text-2xl font-bold text-crema">$7.50</span>
+</li>
+<li class="group flex flex-col md:flex-row justify-between md:items-end gap-2 border-b border-espresso/10 pb-6">
+<div>
+<span class="font-headline text-3xl font-bold uppercase tracking-tight group-hover:text-crema transition-colors">Alchemist Toast</span>
+<p class="font-body text-espresso/50 uppercase text-xs tracking-widest mt-2">Sourdough, smashed avocado, chili crunch</p>
+</div>
+<span class="font-headline text-2xl font-bold text-crema">$11.00</span>
+</li>
+<li class="group flex flex-col md:flex-row justify-between md:items-end gap-2 border-b border-espresso/10 pb-6">
+<div>
+<span class="font-headline text-3xl font-bold uppercase tracking-tight group-hover:text-crema transition-colors">Espresso Self Bowl</span>
+<p class="font-body text-espresso/50 uppercase text-xs tracking-widest mt-2">Greek yogurt, local granola, seasonal fruit</p>
+</div>
+<span class="font-headline text-2xl font-bold text-crema">$9.00</span>
+</li>
+<li class="group flex flex-col md:flex-row justify-between md:items-end gap-2 border-b border-espresso/10 pb-6">
+<div>
+<span class="font-headline text-3xl font-bold uppercase tracking-tight group-hover:text-crema transition-colors">Double Shot</span>
+<p class="font-body text-espresso/50 uppercase text-xs tracking-widest mt-2">Our signature dark roast alchemy</p>
+</div>
+<span class="font-headline text-2xl font-bold text-crema">$4.00</span>
+</li>
+</ul>
+</div>
+</section>
+<!-- Section 5: Location / Schedule -->
+<section class="py-32 px-6 md:px-12 bg-parchment">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<div>
+<h2 class="font-headline text-editorial font-black uppercase mb-16 leading-none tracking-tighter">
+                FIND THE <br/> <span class="text-crema text-[1.2em]">TRAILER</span>
+</h2>
+<div class="space-y-12">
+<div class="border-l-4 border-crema pl-8">
+<h4 class="font-label text-crema tracking-[0.3em] mb-3 uppercase text-xs font-bold">Basecamp Location</h4>
+<p class="text-4xl font-headline font-black uppercase tracking-tight text-espresso">Malabar, FL</p>
+<p class="text-lg text-espresso/60 font-medium mt-1">Ocean Ave / US-1 Corner</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-12 border-l-4 border-espresso/10 pl-8">
+<div>
+<h4 class="font-label text-espresso/40 tracking-[0.3em] mb-2 uppercase text-xs font-bold">Mon — Fri</h4>
+<p class="text-2xl font-headline font-bold uppercase text-espresso">6AM — 11AM</p>
+</div>
+<div>
+<h4 class="font-label text-espresso/40 tracking-[0.3em] mb-2 uppercase text-xs font-bold">Saturday</h4>
+<p class="text-2xl font-headline font-bold uppercase text-espresso">7AM — 12PM</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="aspect-square bg-espresso/5 overflow-hidden">
+<img alt="Map location" class="w-full h-full object-cover grayscale brightness-90 contrast-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANHPfcQDbmxYqt12_neAPxjVBxwQ_TYdyDzrHtHjVCloAllSTo1iGAD9gIBdh75nTolCzTQelXOpsFOOzjB6p9Mm8ZKB5_i5L70pzpuxDuVuGD1ywnauIiB-8P6EMjcadeDiDZhY0MPzboiPeMbGB3XdVyAinGMTjUYFfCPVNz07SaTrABGaWGT7XLmtGKsuQi5t5BtUOEEqnBiDiWiOD2peHjDMI3KYsm71kCvOlTpEIcVaLUMVuwaJyVRyntS2_TyBhjydwvIMw"/>
+</div>
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+<div class="w-20 h-20 bg-crema/20 rounded-full flex items-center justify-center animate-ping"></div>
+<div class="absolute w-6 h-6 bg-espresso border-2 border-crema rounded-full"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 6: Final CTA -->
+<section class="py-40 px-6 text-center bg-espresso text-parchment relative overflow-hidden">
+<div class="relative z-10">
+<h2 class="font-headline text-huge font-black uppercase leading-[0.85] mb-16 tracking-tighter">
+            YOUR <span class="text-crema">MORNING</span> <br/> STARTS HERE
+        </h2>
+<button class="bg-parchment text-espresso px-16 py-6 font-headline text-lg font-black uppercase tracking-widest hover:bg-crema hover:text-espresso transition-all">
+            Visit Us Today
+        </button>
+</div>
+<!-- Decorative Text Overlay -->
+<div class="absolute inset-0 flex items-center justify-center opacity-[0.05] select-none pointer-events-none">
+<span class="font-headline text-[40rem] font-black uppercase whitespace-nowrap">AMY'S</span>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-espresso text-parchment py-24 px-6 md:px-12">
+<div class="max-w-full flex flex-col md:flex-row justify-between items-end gap-12">
+<div class="flex flex-col gap-6">
+<div class="text-4xl font-black text-crema tracking-tighter font-headline uppercase leading-none">
+                AMY’S <br/> ESPRESSO <br/> SELF
+            </div>
+<div class="text-[0.65rem] tracking-[0.5em] font-bold uppercase opacity-40">
+                MALABAR, FLORIDA • CRAFTED WITH SOUL
+            </div>
+</div>
+<div class="flex flex-col md:flex-row gap-12 md:gap-24 items-end md:items-center">
+<div class="flex gap-10">
+<a class="text-xs font-bold uppercase tracking-[0.2em] hover:text-crema transition-colors" href="#">Instagram</a>
+<a class="text-xs font-bold uppercase tracking-[0.2em] hover:text-crema transition-colors" href="#">Facebook</a>
+<a class="text-xs font-bold uppercase tracking-[0.2em] hover:text-crema transition-colors" href="#">Contact</a>
+</div>
+<div class="text-[0.6rem] font-bold tracking-[0.3em] uppercase opacity-30 text-right">
+                © 2024 AMY'S ESPRESSO SELF CAFE. ALL RIGHTS RESERVED.
+            </div>
+</div>
+</div>
+</footer>
+</body></html>
