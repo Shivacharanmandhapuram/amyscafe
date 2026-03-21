@@ -233,6 +233,7 @@ body {
     color: var(--color-retro-red);
     text-decoration: none;
     text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+    white-space: nowrap;
 }
 
 .brand-block-font {
@@ -1463,12 +1464,16 @@ body {
         bottom: 90px !important;
         right: 15px !important;
     }
-    .navbar-links a[href="#gallery"],
-    .navbar-links a[href="#contact"] {
+    .navbar-links a[href*="#gallery"],
+    .navbar-links a[href*="#contact"] {
         display: none !important;
     }
 }
 
+@keyframes jukeboxPulse {
+    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(211, 47, 47, 0.7); }
+    70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(211, 47, 47, 0); }
+    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(211, 47, 47, 0); }
 }
 
 @media (max-width: 768px) {

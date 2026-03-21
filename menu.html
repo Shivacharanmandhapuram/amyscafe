@@ -341,8 +341,48 @@
         </div>
     </footer>
     <script type="module" src="/main.js"></script>    <!-- Global Floating Call Button -->
-    <a href="tel:+17726434430" class="floating-call-btn animate-fade-in-up" aria-label="Call Now">
-        <span class="material-symbols-outlined">call</span>
-    </a>
+    <!-- 80s Jukebox Player -->
+    <div class="jukebox-container" style="position: fixed; bottom: 30px; right: 30px; z-index: 9999;">
+        <audio id="diner-jukebox" loop>
+            <source src="/public/80s-diner-track.mp3" type="audio/mpeg">
+        </audio>
+        <button id="jukebox-btn" class="btn btn-pill btn-retro-red" style="display: flex; align-items: center; gap: 0.5rem; font-family: var(--font-headline); letter-spacing: 0.05em; padding: 0.75rem 1.5rem; box-shadow: 0 10px 25px rgba(0,0,0,0.3); animation: jukeboxPulse 2s infinite; cursor: pointer; border: 2px solid var(--color-parchment);">
+            <span class="material-symbols-outlined">music_note</span>
+            <span id="jukebox-text">Get the village diner vibe</span>
+        </button>
+    </div>
+
+    <script>
+        const Jukebox = {
+            audio: document.getElementById('diner-jukebox'),
+            btn: document.getElementById('jukebox-btn'),
+            text: document.getElementById('jukebox-text'),
+            icon: document.querySelector('#jukebox-btn .material-symbols-outlined'),
+            isPlaying: false,
+
+            init() {
+                this.audio.volume = 0.4;
+                this.btn.addEventListener('click', () => this.toggle());
+            },
+
+            toggle() {
+                if (this.isPlaying) {
+                    this.audio.pause();
+                    this.text.textContent = 'Get the village diner vibe';
+                    this.icon.textContent = 'music_note';
+                    this.btn.style.animation = 'jukeboxPulse 2s infinite';
+                    this.isPlaying = false;
+                } else {
+                    this.audio.play().catch(e => console.error('Playback failed:', e));
+                    this.text.textContent = 'Stop the Vibe';
+                    this.icon.textContent = 'stop_circle';
+                    this.btn.style.animation = 'none';
+                    this.isPlaying = true;
+                }
+            }
+        };
+
+        document.addEventListener('DOMContentLoaded', () => Jukebox.init());
+    </script>
 </body>
 </html>
