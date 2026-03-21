@@ -1490,4 +1490,5 @@ body {
     .hero-split { min-height: 80vh !important; }
     .post-it-badge { font-size: 0.6rem !important; padding: 0.5rem 1rem !important; }
     body { overflow-x: hidden; }
+    .navbar-right { display: none !important; }
 }
