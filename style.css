@@ -547,7 +547,7 @@ body {
     .hero-truck-illustration {
         width: 100%;
         max-width: 800px;
-        margin-right: 0;
+        margin-right: -8%;
         margin-left: auto;
     }
 }
@@ -1460,8 +1460,12 @@ body {
         justify-content: center;
     }
     .jukebox-container {
-        bottom: 20px !important;
-        right: 20px !important;
+        bottom: 90px !important;
+        right: 15px !important;
+    }
+    .navbar-links a[href="#gallery"],
+    .navbar-links a[href="#contact"] {
+        display: none !important;
     }
 }
 
