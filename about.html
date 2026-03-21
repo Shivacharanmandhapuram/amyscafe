@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Amy’s Espresso Self</title>
     <!-- Premium Web Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800;900&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800;900&family=Manrope:wght@400;500;700&family=Alfa+Slab+One&family=Pacifico&family=Kalam:wght@400;700&display=swap" rel="stylesheet">
     <!-- Google Material Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
     <!-- Main Stylesheet -->
@@ -13,61 +13,61 @@
 </head>
 <body class="selection-theme" style="background-color: var(--color-parchment);">
     <!-- Navigation -->
-    <nav class="navbar glass-effect">
+    <nav class="navbar vintage-chrome">
         <a href="index.html" style="text-decoration: none;">
-            <div class="navbar-brand text-headline brand-highlight">
-                <span class="brand-icon material-symbols-outlined">coffee</span> AMY'S
+            <div class="brand-script brand-highlight">
+                Village Diner
             </div>
         </a>
         <div class="navbar-links">
-            <a href="index.html" class="nav-link text-label">Home</a>
-            <a href="menu.html" class="nav-link text-label">Menu</a>
-            <a href="about.html" class="nav-link text-label nav-active-underline">About Us</a>
-            <a href="#" class="nav-link text-label">Gallery</a>
-            <a href="#" class="nav-link text-label">Contact</a>
+            <a href="index.html" class="nav-link text-label" id="nav-home">Home</a>
+            <a href="menu.html" class="nav-link text-label" id="nav-menu">The Griddle</a>
+            <a href="about.html" class="nav-link text-label nav-active-underline" id="nav-about">Our Story</a>
+            <a href="index.html#gallery" class="nav-link text-label" id="nav-gallery">Gallery</a>
+            <a href="index.html#contact" class="nav-link text-label" id="nav-contact">Contact</a>
         </div>
         <div class="navbar-right">
-            <a href="tel:+17726434430" class="btn btn-pill btn-dark text-headline nav-cta" style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem; padding: 0.5rem 1rem; text-decoration: none;">
-                <span class="material-symbols-outlined" style="font-size: 1.1rem;">call</span> Call Now
+            <a href="index.html#location" class="btn btn-pill btn-retro-red text-headline nav-cta" style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem; padding: 0.5rem 1rem; text-decoration: none;">
+                <span class="material-symbols-outlined" style="font-size: 1.1rem;">map</span> Get Directions
             </a>
         </div>
     </nav>
 
     <main>
         <section class="about-hero">
-            <h1 class="text-headline text-huge" style="color: var(--color-espresso);">OUR STORY</h1>
+            <h1 class="brand-block-font text-huge" style="color: var(--color-retro-red); font-size: 4.5rem; letter-spacing: 0.05rem;">OUR STORY</h1>
         </section>
 
         <!-- Pillar 1: Origin -->
         <section class="about-grid">
             <div class="about-text-block animate-fade-in-up">
-                <div class="text-label text-highlight tracking-widest" style="margin-bottom: 1rem; font-weight: 800;">THE ORIGIN</div>
-                <h2 class="text-headline">Passion in Every Pour.</h2>
-                <p class="text-body">Amy Burgess-Brown started Espresso Self with a simple goal: to serve the Malabar community artisan-quality coffee without the long waits or high prices. What began as a dream for a mobile coffee haven has grown into a 4.9-star neighborhood staple.</p>
+                <div class="text-label text-highlight tracking-widest" style="margin-bottom: 1rem; font-weight: 800;">MEET KEVIN HAYES</div>
+                <h2 class="brand-block-font text-headline" style="color: var(--color-espresso); font-size: 2.75rem; line-height: 1.1; margin-bottom: 1rem;">The Heart of the Diner</h2>
+                <p class="text-body text-faded" style="font-size: 1.15rem; line-height: 1.6;">The Village Diner is proudly locally owned and operated by Kevin Hayes, a well-known figure in the Johnson City community. Kevin is frequently seen on the floor, personally greeting customers, filling coffee cups, and ensuring the diner always feels like "home." Customers describe him as a friendly, hands-on leader who is often found cleaning windows or helping his staff during the busiest shifts.</p>
             </div>
-            <div class="about-image-wrap right-tilt animate-fade-in-up-delay">
-                <img src="/public/founders.jpg" alt="Founders Amy and Mia at the food truck">
+            <div class="about-image-wrap right-tilt animate-fade-in-up-delay polaroid-frame" style="padding: 12px 12px 25px 12px; background-color: #fff; box-shadow: 0 10px 20px rgba(0,0,0,0.15);">
+                <img src="/public/founders.jpg" alt="Kevin Hayes" class="vintage-sepia" style="border-radius: 2px; width: 100%; height: 100%; object-fit: cover;">
             </div>
         </section>
 
         <!-- Pillar 2: The Team -->
         <section class="about-grid" style="margin-top: 6rem;">
-            <div class="about-image-wrap left-tilt animate-fade-in-up">
-                <img src="/public/customer.png" alt="Happy customer with bagel at Espresso Self">
+            <div class="about-image-wrap left-tilt animate-fade-in-up polaroid-frame" style="padding: 12px 12px 25px 12px; background-color: #fff; box-shadow: 0 10px 20px rgba(0,0,0,0.15);">
+                <img src="/public/customer.png" alt="Happy customer with bagel at the Village Diner" class="vintage-sepia" style="border-radius: 2px; width: 100%; height: 100%; object-fit: cover;">
             </div>
             <div class="about-text-block animate-fade-in-up-delay">
-                <div class="text-label text-highlight tracking-widest" style="margin-bottom: 1rem; font-weight: 800;">THE COMMUNITY</div>
-                <h2 class="text-headline">Part of the Morning Ritual.</h2>
-                <p class="text-body">When you visit us at 775 Malabar Rd, you're not just a customer; you're part of the morning ritual. From Amy’s custom flavor creations to Mia’s steady hand in the kitchen, we take pride in making every sandwich and cold brew exactly the way you like it—fresh and with a smile.</p>
+                <div class="text-label text-highlight tracking-widest" style="margin-bottom: 1rem; font-weight: 800;">THE GROOVY IDENTITY</div>
+                <h2 class="brand-block-font text-headline" style="color: var(--color-espresso); font-size: 2.75rem; line-height: 1.1; margin-bottom: 1rem;">No Shortcuts. Just Alchemy.</h2>
+                <p class="text-body text-faded" style="font-size: 1.15rem; line-height: 1.6;">Our leadership leans into a unique 80s and Grateful Dead theme, filling the walls with pictures, tie-dye decor, and "Hey Now" greetings. We maintain a strict set of old-school values, anchored by our "no shortcuts" handcrafted quality approach. Whether it's our homemade corned beef hash or our fresh-ground chuck for burgers, we take pride in making every meal from scratch.</p>
             </div>
         </section>
 
         <!-- Pillar 3: Commitment -->
-        <section class="about-full-width animate-fade-in">
+        <section class="about-full-width animate-fade-in" style="background-color: var(--color-retro-red); border-top: 5px solid var(--color-espresso); padding: 5rem 2rem;">
             <div style="text-align: center;">
-                <div class="text-label tracking-widest" style="color: var(--color-parchment); margin-bottom: 1rem; font-weight: 800; opacity: 0.8;">THE COMMITMENT</div>
-                <h2 class="text-headline">More Than Just a Quick Bite.</h2>
-                <p class="text-body" style="max-width: 700px; margin: 0 auto;">We don’t cut corners. Whether it’s our famous candied bacon, our velvety nitro cold brew, or our loaded breakfast burritos, we use high-quality ingredients because we believe Malabar deserves the best start to its day.</p>
+                <div class="text-label tracking-widest" style="color: var(--color-parchment); margin-bottom: 1rem; font-weight: 800; opacity: 0.9;">A NEIGHBORHOOD STAPLE</div>
+                <h2 class="brand-block-font text-headline" style="color: #fff; font-size: 3.5rem; margin-bottom: 1.5rem; letter-spacing: 0.05rem;">Local Giving & Community First</h2>
+                <p class="text-body" style="max-width: 800px; margin: 0 auto; color: #fff; font-size: 1.25rem; line-height: 1.6; opacity: 0.95;">Under Kevin’s leadership, the diner is known for participating in local charity drives and community events. We aren't just a place to grab a quick bite—we are a central hub for the residents of Johnson City to gather, connect, and thrive.</p>
             </div>
         </section>
     </main>
