@@ -744,7 +744,7 @@ body {
 .statement-text {
     font-size: clamp(1.25rem, 3vw, 1.875rem);
     font-weight: 300;
-    color: rgba(245, 245, 220, 0.6);
+    color: var(--color-espresso);
     max-width: 42rem;
 }
 
