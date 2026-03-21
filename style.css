@@ -1469,8 +1469,20 @@ body {
     }
 }
 
-@keyframes jukeboxPulse {
-    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(211, 47, 47, 0.7); }
-    70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(211, 47, 47, 0); }
-    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(211, 47, 47, 0); }
+}
+
+@media (max-width: 768px) {
+    .navbar { height: 65px !important; }
+    .brand-script { font-size: 1.5rem !important; padding: 0.25rem 0.5rem !important; }
+    .btn { padding: 0.75rem 1.25rem !important; font-size: 0.9rem !important; }
+    .btn-pill { padding: 0.75rem 1.5rem !important; }
+    .btn-primary, .btn-secondary { font-size: 0.7rem !important; letter-spacing: 0.05em !important; }
+    .text-huge { font-size: 2.5rem !important; }
+    .hero-title { font-size: 2.75rem !important; line-height: 1.1 !important; margin-bottom: 1rem !important; }
+    .statement-title { font-size: 2.25rem !important; }
+    .cta-title { font-size: 2.25rem !important; }
+    .menu-title { font-size: 2rem !important; }
+    .hero-split { min-height: 80vh !important; }
+    .post-it-badge { font-size: 0.6rem !important; padding: 0.5rem 1rem !important; }
+    body { overflow-x: hidden; }
 }
