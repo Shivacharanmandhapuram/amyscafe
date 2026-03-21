@@ -1448,4 +1448,25 @@ body {
     .floating-call-btn .material-symbols-outlined {
         font-size: 1.6rem;
     }
+    
+    #jukebox-text {
+        display: none;
+    }
+    #jukebox-btn {
+        width: 60px;
+        height: 60px;
+        padding: 0 !important;
+        border-radius: 50% !important;
+        justify-content: center;
+    }
+    .jukebox-container {
+        bottom: 20px !important;
+        right: 20px !important;
+    }
+}
+
+@keyframes jukeboxPulse {
+    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(211, 47, 47, 0.7); }
+    70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(211, 47, 47, 0); }
+    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(211, 47, 47, 0); }
 }
