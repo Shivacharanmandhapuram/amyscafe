@@ -533,9 +533,10 @@ body {
 
 @media (min-width: 1024px) {
     .hero-truck-illustration {
-        width: 125%;
-        max-width: 1000px;
-        margin-right: -5%;
+        width: 100%;
+        max-width: 800px;
+        margin-right: 0;
+        margin-left: auto;
     }
 }
 
