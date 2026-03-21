@@ -201,9 +201,21 @@ body {
 }
 
 .vintage-chrome {
-    background-color: var(--color-vintage-cream);
+    background-color: var(--color-espresso);
     border-bottom: 4px solid var(--color-retro-red);
-    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.vintage-chrome .brand-script {
+    color: var(--color-parchment) !important;
+}
+
+.vintage-chrome .nav-link {
+    color: var(--color-parchment) !important;
+}
+
+.vintage-chrome .nav-link:hover {
+    color: var(--color-crema) !important;
 }
 
 .brand-highlight {
