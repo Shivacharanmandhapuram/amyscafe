@@ -1,18 +1,24 @@
 /* CSS Reset & Variables */
 :root {
-    --color-parchment: #F5F5DC;
-    --color-espresso: #2B1B17;
-    --color-crema: #D4AF37;
-    --color-espresso-light: rgba(43, 27, 23, 0.7);
-    --color-espresso-faint: rgba(43, 27, 23, 0.1);
-    --color-espresso-fainter: rgba(43, 27, 23, 0.05);
-    
+    /* Color Palette - Espresso Self (Base) & Village Diner (Retro Override) */
+    --color-espresso: #2B1B17;      /* Deep Coffee Brown */
+    --color-espresso-light: #4A352F;
+    --color-crema: #D4AF37;         /* Golden Crema/Accent */
+    --color-parchment: #F5F5DC;     /* Off-White Background */
+    --color-retro-red: #D32F2F;     /* Vintage Diner Red */
+    --color-vintage-cream: #FFFDD0; /* Classic Diner Cream */
+
+    /* Typography */
     --font-headline: 'Epilogue', sans-serif;
     --font-body: 'Manrope', sans-serif;
-    
-    /* Layout */
-    --padding-x: clamp(1.5rem, 4vw, 3rem);
-    --section-py: clamp(4rem, 10vw, 8rem);
+    --font-script: 'Pacifico', cursive;
+    --font-block: 'Alfa Slab One', cursive;
+
+    /* Custom Measurements */
+    --nav-height: 80px;
+    --border-radius-base: 12px;
+    --padding-x: 5%;
+    --section-py: clamp(4rem, 10vw, 8rem); /* Keeping original section-py */
     --border-radius: 0rem; /* Brutalist/modern sharp edges */
 }
 
@@ -156,6 +162,23 @@ body {
     transform: translateX(5px);
 }
 
+.btn-retro-red {
+    background-color: var(--color-retro-red);
+    color: var(--color-vintage-cream);
+    font-family: var(--font-block);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border: 2px solid #b71c1c;
+    box-shadow: 0 4px 6px rgba(211, 47, 47, 0.3);
+}
+
+.btn-retro-red:hover {
+    background-color: var(--color-vintage-cream);
+    color: var(--color-retro-red);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(211, 47, 47, 0.4);
+}
+
 /* Material Icons Settings */
 .material-symbols-outlined {
     font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
@@ -177,36 +200,49 @@ body {
     border-bottom: 2px solid rgba(43, 27, 23, 0.05);
 }
 
-.glass-effect {
-    background-color: rgba(245, 245, 220, 0.95);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-}
-
-@media (max-width: 1023px) {
-    .glass-effect {
-        backdrop-filter: none !important;
-        -webkit-backdrop-filter: none !important;
-        background-color: var(--color-parchment);
-    }
+.vintage-chrome {
+    background-color: var(--color-vintage-cream);
+    border-bottom: 4px solid var(--color-retro-red);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
 }
 
 .brand-highlight {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
-    background-color: var(--color-crema);
-    color: var(--color-espresso);
     padding: 0.5rem 1.25rem 0.5rem 0.75rem;
     border-radius: 9999px;
-    font-size: 1rem;
-    font-weight: 800;
-    letter-spacing: 0.05em;
     justify-self: start;
 }
 
-.brand-icon {
-    font-size: 1.25rem;
+.brand-script {
+    font-family: var(--font-script);
+    font-size: 2.2rem;
+    color: var(--color-retro-red);
+    text-decoration: none;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+}
+
+.brand-block-font {
+    font-family: var(--font-block);
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    line-height: 1.1;
+}
+
+.post-it-badge {
+    background-color: #fcfeb5;
+    color: #111;
+    padding: 0.75rem 1.25rem;
+    font-family: 'Kalam', cursive;
+    transform: rotate(-2deg);
+    box-shadow: 2px 4px 8px rgba(0,0,0,0.15);
+    display: inline-block;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 2px;
+    margin-bottom: 2rem;
+    border: 1px solid rgba(0,0,0,0.05);
 }
 
 .navbar-links {
@@ -226,11 +262,11 @@ body {
     border-top: 1px solid rgba(255,255,255,0.05);
 }
 
-.nav-link[href="index.html"]::before { content: 'home'; font-family: 'Material Symbols Outlined'; font-size: 1.4rem; font-weight: normal; margin-bottom: 0.2rem; }
-.nav-link[href="menu.html"]::before { content: 'restaurant_menu'; font-family: 'Material Symbols Outlined'; font-size: 1.4rem; font-weight: normal; margin-bottom: 0.2rem; }
-.nav-link[href="about.html"]::before { content: 'storefront'; font-family: 'Material Symbols Outlined'; font-size: 1.4rem; font-weight: normal; margin-bottom: 0.2rem; }
-.nav-link[href="#"]:nth-of-type(4)::before { content: 'photo_library'; font-family: 'Material Symbols Outlined'; font-size: 1.4rem; font-weight: normal; margin-bottom: 0.2rem; }
-.nav-link[href="#"]:nth-of-type(5)::before { content: 'mail'; font-family: 'Material Symbols Outlined'; font-size: 1.4rem; font-weight: normal; margin-bottom: 0.2rem; }
+.nav-link[href="index.html"]::before { content: 'coffee_maker'; font-family: 'Material Symbols Outlined'; font-size: 1.6rem; font-weight: normal; margin-bottom: 0.2rem; }
+.nav-link[href="menu.html"]::before { content: 'restaurant_menu'; font-family: 'Material Symbols Outlined'; font-size: 1.6rem; font-weight: normal; margin-bottom: 0.2rem; }
+.nav-link[href="about.html"]::before { content: 'pin_drop'; font-family: 'Material Symbols Outlined'; font-size: 1.6rem; font-weight: normal; margin-bottom: 0.2rem; }
+.nav-link[href="#"]:nth-of-type(4)::before { content: 'photo_library'; font-family: 'Material Symbols Outlined'; font-size: 1.6rem; font-weight: normal; margin-bottom: 0.2rem; }
+.nav-link[href="#"]:nth-of-type(5)::before { content: 'mail'; font-family: 'Material Symbols Outlined'; font-size: 1.6rem; font-weight: normal; margin-bottom: 0.2rem; }
 
 @media (max-width: 1023px) {
     .nav-link {
@@ -580,26 +616,83 @@ body {
 
 .menu-card {
     cursor: pointer;
+    position: relative;
+}
+
+.polaroid-frame {
+    background-color: var(--color-vintage-cream);
+    padding: 12px 12px 24px 12px;
+    border-radius: 4px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.polaroid-frame:hover {
+    transform: translateY(-10px) rotate(1deg);
+    box-shadow: 0 20px 30px rgba(0,0,0,0.2);
 }
 
 .menu-card-image-wrap {
     aspect-ratio: 1/1;
     overflow: hidden;
-    background-color: var(--color-espresso-fainter);
-    margin-bottom: 2rem;
+    position: relative;
+    margin-bottom: 1rem;
+    background-color: #222;
 }
 
-.menu-card-image {
+.vintage-sepia {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: grayscale(100%);
-    transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    filter: sepia(0.8) contrast(1.1) brightness(0.9);
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.menu-card:hover .menu-card-image {
-    filter: grayscale(0%);
+.polaroid-frame:hover .vintage-sepia {
+    filter: sepia(0) contrast(1.05) brightness(1);
     transform: scale(1.05);
+}
+
+.legend-badge {
+    position: absolute;
+    top: -12px;
+    left: -12px;
+    background-color: var(--color-crema);
+    color: #111;
+    padding: 0.35rem 0.85rem;
+    border-radius: 9999px;
+    font-family: 'Kalam', cursive;
+    font-weight: 700;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    z-index: 20;
+    box-shadow: 2px 4px 8px rgba(0,0,0,0.2);
+    transform: rotate(-4deg);
+    border: 2px solid #FFF;
+}
+
+.neon-price-bubble {
+    position: absolute;
+    background-color: var(--color-retro-red);
+    color: white;
+    padding: 0.5rem 1.25rem;
+    border-radius: 9999px;
+    font-family: var(--font-block);
+    font-size: 1.25rem;
+    z-index: 15;
+    opacity: 0;
+    transform: translateY(15px) scale(0.9);
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    box-shadow: 0 0 15px rgba(211, 47, 47, 0.8), 0 0 5px rgba(255, 255, 255, 0.8);
+    border: 2px solid white;
+}
+
+.polaroid-frame:hover .neon-price-bubble {
+    opacity: 1;
+    transform: translateY(0) scale(1);
 }
 
 .menu-card-info {

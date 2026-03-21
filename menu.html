@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu - Amy’s Espresso Self</title>
     <!-- Premium Web Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800;900&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800;900&family=Manrope:wght@400;500;700&family=Alfa+Slab+One&family=Pacifico&family=Kalam:wght@400;700&display=swap" rel="stylesheet">
     <!-- Google Material Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
     <!-- Main Stylesheet -->
@@ -13,22 +13,22 @@
 </head>
 <body class="selection-theme" style="background-color: var(--color-parchment);">
     <!-- Navigation -->
-    <nav class="navbar glass-effect">
+    <nav class="navbar vintage-chrome">
         <a href="index.html" style="text-decoration: none;">
-            <div class="navbar-brand text-headline brand-highlight">
-                <span class="brand-icon material-symbols-outlined">coffee</span> AMY'S
+            <div class="brand-script brand-highlight">
+                Village Diner
             </div>
         </a>
         <div class="navbar-links">
-            <a href="index.html" class="nav-link text-label">Home</a>
-            <a href="menu.html" class="nav-link text-label nav-active-underline">Menu</a>
-            <a href="about.html" class="nav-link text-label">About Us</a>
-            <a href="#" class="nav-link text-label">Gallery</a>
-            <a href="#" class="nav-link text-label">Contact</a>
+            <a href="index.html" class="nav-link text-label" id="nav-home">Home</a>
+            <a href="menu.html" class="nav-link text-label nav-active-underline" id="nav-menu">The Griddle</a>
+            <a href="about.html" class="nav-link text-label" id="nav-about">Our Story</a>
+            <a href="#gallery" class="nav-link text-label" id="nav-gallery">Gallery</a>
+            <a href="#contact" class="nav-link text-label" id="nav-contact">Contact</a>
         </div>
         <div class="navbar-right">
-            <a href="tel:+17726434430" class="btn btn-pill btn-dark text-headline nav-cta" style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem; padding: 0.5rem 1rem; text-decoration: none;">
-                <span class="material-symbols-outlined" style="font-size: 1.1rem;">call</span> Call Now
+            <a href="#location" class="btn btn-pill btn-retro-red text-headline nav-cta" style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem; padding: 0.5rem 1rem; text-decoration: none;">
+                <span class="material-symbols-outlined" style="font-size: 1.1rem;">map</span> Get Directions
             </a>
         </div>
     </nav>
@@ -36,135 +36,177 @@
     <main>
         <section class="menu-page">
             <div class="menu-page-header animate-fade-in-up">
-                <h1 class="menu-page-title text-headline">FULL MENU</h1>
-                <p class="text-body text-faded" style="font-size: 1.25rem;">Fresh ingredients. Real coffee. Served daily.</p>
+                <h1 class="menu-page-title brand-block-font" style="font-size: 3.5rem;">THE GRIDDLE MENU</h1>
+                <p class="text-body" style="font-size: 1.25rem; font-family: var(--font-script); color: var(--color-retro-red); margin-top: -1rem;">Breakfast Served From 8AM-11AM, Tuesday-Saturday</p>
             </div>
             
             <div class="menu-grid-layout animate-fade-in-up-delay">
                 <!-- Left Column -->
                 <div class="menu-column">
-                    <!-- WRAPS -->
+                    <!-- BREAKFAST SPECIALS -->
                     <div class="menu-category">
-                        <div class="menu-category-header">WRAPS &gt;&gt;&gt;&gt; IT'S A WRAP</div>
-                        <p class="menu-category-price-note text-label">Your Choice: $6.75</p>
+                        <div class="menu-category-header brand-block-font" style="font-size: 1.75rem; color: var(--color-retro-red);">BREAKFAST SPECIALS</div>
                         
                         <div class="menu-items-list">
                             <div class="menu-item border-b-primary">
                                 <div class="menu-item-header">
-                                    <span class="menu-item-title text-headline">Chicken/Bacon/Ranch Wrap</span>
+                                    <span class="menu-item-title text-headline">Breakfast Burrito</span>
+                                    <span class="menu-item-price text-highlight">$9.95</span>
                                 </div>
-                                <p class="menu-item-desc text-body">Grilled chicken breast strips, bacon, mozzarella cheese, lettuce and ranch dressing</p>
+                                <p class="menu-item-desc text-body">Two eggs scrambled, American cheese, salsa, hot sauce, and choice of ham, bacon or sausage, rolled and grilled in a flour tortilla. Served with a side of homefries.</p>
                             </div>
                             <div class="menu-item border-b-primary">
                                 <div class="menu-item-header">
-                                    <span class="menu-item-title text-headline">Cheeseburger Wrap</span>
+                                    <span class="menu-item-title text-headline">Breakfast Pizza</span>
+                                    <span class="menu-item-price text-highlight">$10.95</span>
                                 </div>
-                                <p class="menu-item-desc text-body">Ground beef, cheese, pickles, mustard and ketchup (add bacon for 1.50)</p>
+                                <p class="menu-item-desc text-body">Two eggs scrambled, cheddar cheese, sautéed peppers and onions, bacon and sausage, topped with diced tomatoes, on a crispy grilled flour tortilla.</p>
                             </div>
                             <div class="menu-item border-b-primary">
                                 <div class="menu-item-header">
-                                    <span class="menu-item-title text-headline">Burrito/Soft Taco</span>
+                                    <span class="menu-item-title text-headline">French Toast Griller</span>
+                                    <span class="menu-item-price text-highlight">$10.95</span>
                                 </div>
-                                <p class="menu-item-desc text-body">Seasoned ground beef or chicken, cheese, sour cream, lettuce, tomato & taco sauce (mild, medium, or hot)</p>
+                                <p class="menu-item-desc text-body">Two eggs scrambled, American cheese, and choice of ham, bacon, or sausage, served between two pieces of French toast. Topped with confectioners' sugar, and served with a side of syrup.</p>
                             </div>
                             <div class="menu-item border-b-primary">
                                 <div class="menu-item-header">
-                                    <span class="menu-item-title text-headline">BBQ Chicken Wrap</span>
+                                    <span class="menu-item-title text-headline">Sausage Gravy w/ Biscuit</span>
+                                    <span class="menu-item-price text-highlight">$9.95</span>
                                 </div>
-                                <p class="menu-item-desc text-body">Grilled chicken breast strips, basted in BBQ sauce with hickory bacon</p>
+                                <p class="menu-item-desc text-body">Sausage Gravy over a buttermilk biscuit, served with two eggs any style.</p>
                             </div>
                             <div class="menu-item border-b-primary">
                                 <div class="menu-item-header">
-                                    <span class="menu-item-title text-headline">Big Mack Wrap</span>
+                                    <span class="menu-item-title text-headline">Steak and Cheese Omelet</span>
+                                    <span class="menu-item-price text-highlight">$10.50</span>
                                 </div>
-                                <p class="menu-item-desc text-body">Ground beef, special sauce, lettuce, cheese, pickles</p>
+                                <p class="menu-item-desc text-body">Three pieces of American cheese, steak, and sautéed peppers and onions, folded into a three-egg omelet. Served with homefries and choice of toast.</p>
+                            </div>
+                            <div class="menu-item border-b-primary">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-title text-headline">Mexican Omelet</span>
+                                    <span class="menu-item-price text-highlight">$9.25</span>
+                                </div>
+                                <p class="menu-item-desc text-body">Two pieces of pepper jack cheese, salsa, sautéed peppers, onions, and mushrooms, folded into a three-egg omelet. Served with a side of sour cream, homefries, and choice of toast.</p>
+                            </div>
+                            <div class="menu-item border-b-primary">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-title text-headline">Greek Omelet</span>
+                                    <span class="menu-item-price text-highlight">$9.00</span>
+                                </div>
+                                <p class="menu-item-desc text-body">Feta cheese, tomatoes, and sautéed baby spinach folded into a three-egg omelet. Served with homefries and choice of toast.</p>
+                            </div>
+                            <div class="menu-item border-b-primary">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-title text-headline">Chili and Cheese Omelet</span>
+                                    <span class="menu-item-price text-highlight">$9.95</span>
+                                </div>
+                                <p class="menu-item-desc text-body">Homemade chili and cheddar cheese folded into a three-egg omelet. Served with homefries and choice of toast.</p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- SALADS -->
+                    <!-- FROM THE GRIDDLE -->
                     <div class="menu-category" style="margin-top: 4rem;">
-                        <div class="menu-category-header">SALADS</div>
-                        <p class="menu-category-price-note text-label">Small: $4.50 &nbsp;|&nbsp; Large: $7.75</p>
+                        <div class="menu-category-header brand-block-font" style="font-size: 1.75rem; color: var(--color-retro-red);">FROM THE GRIDDLE</div>
                         
                         <div class="menu-items-list">
                             <div class="menu-item border-b-primary">
                                 <div class="menu-item-header">
-                                    <span class="menu-item-title text-headline">Taco Salad</span>
+                                    <span class="menu-item-title text-headline">Pumpkin Waffle or Cakes</span>
+                                    <span class="menu-item-price text-highlight">$7.95</span>
                                 </div>
-                                <p class="menu-item-desc text-body">Seasoned ground beef, shredded cheese, sour cream, lettuce, tomato. Served with chips and salsa</p>
+                                <p class="menu-item-desc text-body">One pumpkin Belgian waffle, or two pumpkin pancakes topped with butter, cinnamon, confectioners' sugar, and whipped cream.</p>
                             </div>
                             <div class="menu-item border-b-primary">
                                 <div class="menu-item-header">
-                                    <span class="menu-item-title text-headline">Chicken/Bacon/Ranch Salad</span>
+                                    <span class="menu-item-title text-headline">Pancakes or French Toast</span>
+                                    <span class="menu-item-price text-highlight">$5.95</span>
                                 </div>
-                                <p class="menu-item-desc text-body">Grilled chicken breast strips, bacon, mozzarella cheese, lettuce and ranch dressing</p>
+                                <p class="menu-item-desc text-body">Two buttermilk pancakes, or two slices of French toast served with butter on the side.</p>
                             </div>
                             <div class="menu-item border-b-primary">
                                 <div class="menu-item-header">
-                                    <span class="menu-item-title text-headline">Big Mack Salad</span>
+                                    <span class="menu-item-title text-headline">Belgian Waffle</span>
+                                    <span class="menu-item-price text-highlight">$5.95</span>
                                 </div>
-                                <p class="menu-item-desc text-body">Ground beef, shredded cheese, special sauce, lettuce and pickles</p>
+                                <p class="menu-item-desc text-body">Served with butter on the side.</p>
+                            </div>
+                            <div class="menu-item" style="margin-top: 1rem;">
+                                <div class="text-body" style="font-size: 0.9rem; font-style: italic; color: var(--color-espresso-light);">
+                                    <strong>+Add-ons:</strong> Add two eggs any style, and a side of ham, bacon, or sausage $5.95 &bull; Add strawberries, blueberries, or bananas, and whipped cream $3.00 &bull; Add homemade bananas foster $4.00
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- DRINKS -->
+                    <!-- GRITS AND OATMEAL -->
                     <div class="menu-category" style="margin-top: 4rem;">
-                        <div class="menu-category-header">DRINKS</div>
+                        <div class="menu-category-header brand-block-font" style="font-size: 1.75rem; color: var(--color-retro-red);">GRITS AND OATMEAL</div>
+                        <p class="menu-category-price-note text-label" style="text-transform: none; font-style: italic;">Add strawberries, blueberries, bananas, pecans, or craisins for 75&cent;</p>
                         
                         <div class="menu-items-list drinks-list">
                             <div class="menu-item border-b-primary">
                                 <div class="menu-item-header">
-                                    <span class="menu-item-title text-headline">Hot Coffee</span>
+                                    <span class="menu-item-title text-headline">Cheddar Grits</span>
                                 </div>
-                                <div class="drink-sizes text-body"><span>12oz: 1.69</span> <span>16oz: 1.99</span> <span>24oz: 2.29</span></div>
+                                <div class="drink-sizes text-body"><span>Cup: 3.75</span> <span>Bowl: 4.75</span></div>
                             </div>
                             <div class="menu-item border-b-primary">
                                 <div class="menu-item-header">
-                                    <span class="menu-item-title text-headline">Espresso</span>
+                                    <span class="menu-item-title text-headline">Plain Oatmeal</span>
                                 </div>
-                                <p class="menu-item-desc text-body">Served traditional or Cuban style</p>
-                                <div class="drink-sizes text-body"><span>4oz: 1.59</span></div>
+                                <div class="drink-sizes text-body"><span>Cup: 2.50</span> <span>Bowl: 2.95</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BEVERAGES -->
+                    <div class="menu-category" style="margin-top: 4rem;">
+                        <div class="menu-category-header brand-block-font" style="font-size: 1.75rem; color: var(--color-retro-red);">BEVERAGES</div>
+                        
+                        <div class="menu-items-list drinks-list">
+                            <div class="menu-item border-b-primary">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-title text-headline">Coffee or Hot Tea</span>
+                                    <span class="menu-item-price text-highlight">$1.95</span>
+                                </div>
                             </div>
                             <div class="menu-item border-b-primary">
                                 <div class="menu-item-header">
-                                    <span class="menu-item-title text-headline">Raging Bull</span>
+                                    <span class="menu-item-title text-headline">Juice (Apple, Orange, Cranberry or V8)</span>
+                                    <span class="menu-item-price text-highlight">$2.75</span>
+                                </div>
+                            </div>
+                            <div class="menu-item border-b-primary">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-title text-headline">Hot Chocolate w/ Whipped Cream</span>
+                                    <span class="menu-item-price text-highlight">$2.25</span>
+                                </div>
+                            </div>
+                            <div class="menu-item border-b-primary">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-title text-headline">Fountain Drink</span>
+                                    <span class="menu-item-price text-highlight">$2.50</span>
+                                </div>
+                            </div>
+                            <div class="menu-item border-b-primary">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-title text-headline">Fresh Brewed Unsweetened Iced Tea</span>
+                                    <span class="menu-item-price text-highlight">$2.50</span>
+                                </div>
+                            </div>
+                            <div class="menu-item border-b-primary">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-title text-headline">White Milk</span>
+                                    <span class="menu-item-price text-highlight">$2.00</span>
+                                </div>
+                            </div>
+                            <div class="menu-item border-b-primary">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-title text-headline">Chocolate Milk</span>
                                     <span class="menu-item-price text-highlight">$3.00</span>
-                                </div>
-                                <p class="menu-item-desc text-body">Redbull energy drink with your choice of flavor(s)</p>
-                            </div>
-                            <div class="menu-item border-b-primary">
-                                <div class="menu-item-header">
-                                    <span class="menu-item-title text-headline">Raging Monster</span>
-                                    <span class="menu-item-price text-highlight">$4.00</span>
-                                </div>
-                                <p class="menu-item-desc text-body">Monster energy drink with your choice of flavor(s)</p>
-                            </div>
-                            <div class="menu-item border-b-primary">
-                                <div class="menu-item-header">
-                                    <span class="menu-item-title text-headline">Nitro Brew</span>
-                                </div>
-                                <p class="menu-item-desc text-body">Our cold brew, infused with nitrogen for a smoother consistency</p>
-                                <div class="drink-sizes text-body"><span>16oz: 3.09</span> <span>24oz: 3.39</span> <span>32oz: 3.89</span></div>
-                            </div>
-                            <div class="menu-item border-b-primary">
-                                <div class="menu-item-header">
-                                    <span class="menu-item-title text-headline">Cold Brew</span>
-                                </div>
-                                <p class="menu-item-desc text-body">Our premium roast, brewed for 24 hours, for rich and bold flavor</p>
-                                <div class="drink-sizes text-body"><span>16oz: 2.99</span> <span>24oz: 3.09</span> <span>32oz: 3.39</span></div>
-                            </div>
-                            <div class="menu-item border-b-primary">
-                                <div class="menu-item-header">
-                                    <span class="menu-item-title text-headline">Sweet Tea or Lemonade</span>
-                                </div>
-                                <div class="drink-sizes text-body"><span>16oz: 1.99</span> <span>24oz: 2.59</span> <span>32oz: 2.99</span></div>
-                            </div>
-                            <div class="menu-item border-b-primary">
-                                <div class="menu-item-header">
-                                    <span class="menu-item-title text-headline">Soda or Bottle Water</span>
-                                    <span class="menu-item-price text-highlight">$1.00</span>
                                 </div>
                             </div>
                         </div>
@@ -173,95 +215,100 @@
 
                 <!-- Right Column -->
                 <div class="menu-column">
-                    <!-- BREAKFAST AND LUNCH -->
+                    <!-- EGGS AND SANDWICHES -->
                     <div class="menu-category">
-                        <div class="menu-category-header">BREAKFAST and LUNCH</div>
-                        <p class="menu-category-price-note text-label">SERVED ALL DAY!</p>
+                        <div class="menu-category-header brand-block-font" style="font-size: 1.75rem; color: var(--color-retro-red);">EGGS AND SANDWICHES</div>
                         
                         <div class="menu-items-list">
                             <div class="menu-item border-b-primary">
                                 <div class="menu-item-header">
-                                    <span class="menu-item-title text-headline">Breakfast Sandwiches</span>
-                                    <span class="menu-item-price text-highlight">$3.75</span>
+                                    <span class="menu-item-title text-headline">Egg Breakfast</span>
+                                    <span class="menu-item-price text-highlight">$4.95</span>
                                 </div>
-                                <p class="menu-item-desc text-body">Bacon, egg & cheese, sausage, egg & cheese, or ham, egg & cheese, on an English muffin</p>
+                                <p class="menu-item-desc text-body">Two eggs any style, homefries, and choice of toast.</p>
                             </div>
                             <div class="menu-item border-b-primary">
                                 <div class="menu-item-header">
-                                    <span class="menu-item-title text-headline">Classic Breakfast</span>
-                                    <span class="menu-item-price text-highlight">$6.00</span>
+                                    <span class="menu-item-title text-headline">American Cheese Omelet</span>
+                                    <span class="menu-item-price text-highlight">$7.95</span>
                                 </div>
-                                <p class="menu-item-desc text-body">2 eggs(scrambled) with toast, and your choice of bacon or sausage</p>
+                                <p class="menu-item-desc text-body">Three pieces of American cheese folded into a three-egg omelet. Served with homefries and choice of toast.</p>
+                            </div>
+                            <div class="menu-item" style="margin-top: 1rem; border-bottom: 1px solid var(--color-espresso); padding-bottom: 1rem; margin-bottom: 1rem;">
+                                <div class="text-body" style="font-size: 0.9rem; font-style: italic; color: var(--color-espresso-light);">
+                                    <strong>+Omelet Upgrades:</strong> Sub swiss, cheddar, feta, provolone, or pepper jack cheese $1.50 &bull; Add tomatoes, peppers, onions, baby spinach, fresh mushrooms, sour cream, or salsa $1.00 &bull; Add ham, bacon, or sausage $1.50 &bull; Add Steak $3.50
+                                </div>
                             </div>
                             <div class="menu-item border-b-primary">
                                 <div class="menu-item-header">
-                                    <span class="menu-item-title text-headline">Breakfast Burrito</span>
-                                    <span class="menu-item-price text-highlight">$6.00</span>
+                                    <span class="menu-item-title text-headline">The Village Sandwich</span>
+                                    <span class="menu-item-price text-highlight">$4.95</span>
                                 </div>
-                                <p class="menu-item-desc text-body">2 eggs(scrambled), cheese, and your choice of bacon, sausage, or ham. Wrapped in a 12" flour tortilla</p>
+                                <p class="menu-item-desc text-body">One egg over hard, American cheese, bacon, and a slice of tomato served on an English muffin.</p>
                             </div>
                             <div class="menu-item border-b-primary">
                                 <div class="menu-item-header">
-                                    <span class="menu-item-title text-headline">Toasted Bagel and Cream Cheese</span>
-                                    <span class="menu-item-price text-highlight">$2.75</span>
+                                    <span class="menu-item-title text-headline">The Parisot</span>
+                                    <span class="menu-item-price text-highlight">$4.95</span>
                                 </div>
-                                <p class="menu-item-desc text-body">Your choice of Asiago or Everything</p>
+                                <p class="menu-item-desc text-body">One egg over hard, American cheese, and grilled sliced ham served on a hard roll.</p>
                             </div>
                             <div class="menu-item border-b-primary">
                                 <div class="menu-item-header">
-                                    <span class="menu-item-title text-headline">BLT</span>
-                                    <span class="menu-item-price text-highlight">$6.00</span>
+                                    <span class="menu-item-title text-headline">Breakfast Sandwich</span>
+                                    <span class="menu-item-price text-highlight">$6.95</span>
                                 </div>
-                                <p class="menu-item-desc text-body">Served on white toast. Extra thick bacon, lettuce, tomatoes and mayo</p>
+                                <p class="menu-item-desc text-body">Two eggs over hard, American cheese, and choice of ham, bacon, or sausage, served on a choice of toast, hard roll, English muffin, bagel, or croissant.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SIDES -->
+                    <div class="menu-category" style="margin-top: 4rem;">
+                        <div class="menu-category-header brand-block-font" style="font-size: 1.75rem; color: var(--color-retro-red);">SIDES</div>
+                        
+                        <div class="menu-items-list drinks-list">
+                            <div class="menu-item border-b-primary">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-title text-headline">Homefries</span>
+                                    <span class="menu-item-price text-highlight">$3.25</span>
+                                </div>
                             </div>
                             <div class="menu-item border-b-primary">
                                 <div class="menu-item-header">
-                                    <span class="menu-item-title text-headline">Chicken Sandwich</span>
+                                    <span class="menu-item-title text-headline">Homemade Hash</span>
+                                    <span class="menu-item-price text-highlight">$5.95</span>
+                                </div>
+                            </div>
+                            <div class="menu-item border-b-primary">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-title text-headline">Canned Hash</span>
+                                    <span class="menu-item-price text-highlight">$4.95</span>
+                                </div>
+                            </div>
+                            <div class="menu-item border-b-primary">
+                                <div class="menu-item-header">
+                                    <span class="menu-item-title text-headline">Ham, Bacon, or Sausage</span>
                                     <span class="menu-item-price text-highlight">$4.50</span>
                                 </div>
-                                <p class="menu-item-desc text-body">Served on a bun. Breaded chicken patty, lettuce, tomatoes and mayo</p>
                             </div>
                             <div class="menu-item border-b-primary">
                                 <div class="menu-item-header">
-                                    <span class="menu-item-title text-headline">Quesadilla</span>
-                                    <span class="menu-item-price text-highlight">$5.75</span>
+                                    <span class="menu-item-title text-headline">Assorted Muffins</span>
+                                    <span class="menu-item-price text-highlight">$2.75</span>
                                 </div>
-                                <p class="menu-item-desc text-body">Chicken & Cheese or Bacon & Cheese</p>
                             </div>
                             <div class="menu-item border-b-primary">
                                 <div class="menu-item-header">
-                                    <span class="menu-item-title text-headline">Sub Sandwich</span>
-                                    <span class="menu-item-price text-highlight">$6.00</span>
+                                    <span class="menu-item-title text-headline">Assorted Bagels w/ cream cheese</span>
+                                    <span class="menu-item-price text-highlight">$2.75</span>
                                 </div>
-                                <p class="menu-item-desc text-body">Ham or turkey on a sub roll, with lettuce, tomatoes and mild cheddar or provolone cheese</p>
                             </div>
                             <div class="menu-item border-b-primary">
                                 <div class="menu-item-header">
-                                    <span class="menu-item-title text-headline">Panini Sandwich</span>
-                                    <span class="menu-item-price text-highlight">$6.00</span>
+                                    <span class="menu-item-title text-headline">Toast or English Muffin</span>
+                                    <span class="menu-item-price text-highlight">$2.00</span>
                                 </div>
-                                <p class="menu-item-desc text-body">Turkey or ham, with provolone or cheddar, on French brioche bread. Add bacon for 1.50 extra</p>
-                            </div>
-                            <div class="menu-item border-b-primary">
-                                <div class="menu-item-header">
-                                    <span class="menu-item-title text-headline">Hotdog</span>
-                                    <span class="menu-item-price text-highlight">$3.00</span>
-                                </div>
-                                <p class="menu-item-desc text-body">100% beef hotdog, served with mustard, ketchup and relish</p>
-                            </div>
-                            <div class="menu-item border-b-primary">
-                                <div class="menu-item-header">
-                                    <span class="menu-item-title text-headline">Chili Cheese Hotdog</span>
-                                    <span class="menu-item-price text-highlight">$4.00</span>
-                                </div>
-                                <p class="menu-item-desc text-body">100% beef hotdog, smothered with chili and mild cheddar</p>
-                            </div>
-                            <div class="menu-item border-b-primary">
-                                <div class="menu-item-header">
-                                    <span class="menu-item-title text-headline">Jumbo Pretzel</span>
-                                    <span class="menu-item-price text-highlight">$3.00</span>
-                                </div>
-                                <p class="menu-item-desc text-body">Salted or with cinnamon and sugar</p>
                             </div>
                         </div>
                     </div>

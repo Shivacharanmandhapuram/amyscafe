@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amy’s Espresso Self Cafe & Eatery</title>
     <!-- Premium Web Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800;900&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700;800;900&family=Manrope:wght@400;500;700&family=Alfa+Slab+One&family=Pacifico&family=Kalam:wght@400;700&display=swap" rel="stylesheet">
     <!-- Google Material Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
     <!-- Main Stylesheet -->
@@ -13,22 +13,22 @@
 </head>
 <body class="selection-theme">
     <!-- Navigation -->
-    <nav class="navbar glass-effect">
+    <nav class="navbar vintage-chrome">
         <a href="index.html" style="text-decoration: none;">
-            <div class="navbar-brand text-headline brand-highlight">
-                <span class="brand-icon material-symbols-outlined">coffee</span> AMY'S
+            <div class="brand-script brand-highlight">
+                Village Diner
             </div>
         </a>
         <div class="navbar-links">
-            <a href="index.html" class="nav-link text-label nav-active">Home</a>
-            <a href="menu.html" class="nav-link text-label">Menu</a>
-            <a href="about.html" class="nav-link text-label">About Us</a>
-            <a href="#" class="nav-link text-label">Gallery</a>
-            <a href="#" class="nav-link text-label">Contact</a>
+            <a href="index.html" class="nav-link text-label nav-active" id="nav-home">Home</a>
+            <a href="menu.html" class="nav-link text-label" id="nav-menu">The Griddle</a>
+            <a href="about.html" class="nav-link text-label" id="nav-about">Our Story</a>
+            <a href="#gallery" class="nav-link text-label" id="nav-gallery">Gallery</a>
+            <a href="#contact" class="nav-link text-label" id="nav-contact">Contact</a>
         </div>
         <div class="navbar-right">
-            <a href="tel:+17726434430" class="btn btn-pill btn-dark text-headline nav-cta" style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem; padding: 0.5rem 1rem; text-decoration: none;">
-                <span class="material-symbols-outlined" style="font-size: 1.1rem;">call</span> Call Now
+            <a href="#location" class="btn btn-pill btn-retro-red text-headline nav-cta" style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem; padding: 0.5rem 1rem; text-decoration: none;">
+                <span class="material-symbols-outlined" style="font-size: 1.1rem;">map</span> Get Directions
             </a>
         </div>
     </nav>
@@ -38,77 +38,89 @@
         <!-- Section 1: Hero -->
         <section class="hero-split">
             <div class="hero-content animate-fade-in-up">
-                <div class="trust-badge text-label text-highlight tracking-widest" style="margin-bottom: 1.5rem;">
-                    <span style="color: #FFF; margin-right: 0.25rem; font-size: 0.9rem;">★</span> 4.9 RATED &bull; LOCAL FAVORITE
+                <div class="trust-badge post-it-badge tracking-widest">
+                    VOTED #1 DINER FOOD IN NY STATE &bull; SCRATCH-MADE DAILY
                 </div>
-                <h1 class="hero-title text-headline">
-                    SKIP THE<br>LINE.<br>GRAB REAL<br>COFFEE.
+                <h1 class="hero-title brand-block-font">
+                    <span class="text-espresso">UNEXPECTEDLY AMAZING.</span><br>
+                    <span class="text-espresso">TRADITIONALLY HOMEMADE.</span>
                 </h1>
                 <div class="hero-divider"></div>
                 <p class="hero-desc text-body">
-                    <strong>Fresh bagels. Real coffee. No waiting.</strong><br>
-                    <span class="text-faded">Built for your morning, not your patience.</span>
+                    <strong>Real food. Real people. No shortcuts.</strong><br>
+                    <span class="text-faded">From our famous hand-shredded hash to the groovy 80s vibes—experience the Floral Ave legend.</span>
                 </p>
                 <div class="hero-location text-body">
-                    <span style="color: #D32F2F;">📍</span> <em>Malabar Rd — In, out, and actually satisfied.</em>
+                    <span class="material-symbols-outlined" style="color: #D32F2F; font-size: 1.1rem; vertical-align: text-bottom;">album</span> <em>255 Floral Ave — Where every meal is a classic.</em>
                 </div>
-                <div class="hero-actions-left">
-                    <button class="btn btn-pill btn-dark text-headline">View Today's Menu</button>
-                    <button class="btn btn-pill btn-secondary text-headline">Get Directions</button>
+                <div class="hero-actions-left" style="z-index: 10;">
+                    <a href="menu.html" class="btn btn-pill btn-retro-red text-headline shadow-xl">Explore the Menu</a>
+                    <a href="#location" class="btn-text btn-icon" style="color: var(--color-espresso);">
+                        FIND THE HIDDEN GEM <span class="material-symbols-outlined icon-slide">explore</span>
+                    </a>
                 </div>
             </div>
             <div class="hero-visual animate-fade-in-up-delay">
-                <img src="/public/hero-truck-image-no-backgroud.png" alt="Amy's Espresso Self Truck" class="hero-truck-illustration">
+                <img src="/public/thecafeimage.png" alt="Village Diner Cafe Front" class="hero-truck-illustration">
             </div>
         </section>
 
-        <!-- Section 2: Menu Highlights -->
-        <section class="menu-section">
+        <!-- Section 2: Flora Ave Legends -->
+        <section class="menu-section" style="background-color: var(--color-parchment);">
             <div class="menu-header">
-                <h2 class="menu-title text-headline text-editorial">
-                    DAILY <span class="text-highlight">RITUALS</span>
+                <h2 class="menu-title brand-block-font" style="font-size: 3rem;">
+                    THE FLORAL AVE <span style="color: var(--color-retro-red);">LEGENDS</span>
                 </h2>
-                <p class="menu-subtitle text-label">Signature Menu Highlights</p>
+                <p class="menu-subtitle text-label" style="font-family: var(--font-script); font-size: 1.5rem; text-transform: none; color: var(--color-espresso-light);">Our Signature Must-Try Dishes</p>
             </div>
             
             <div class="menu-grid">
                 <!-- Item 1 -->
-                <div class="menu-card">
-                    <div class="menu-card-image-wrap">
-                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1NLJoJmGxDHmcejaI-4XViJPSH9OoWg5V2lEQXgjE5uKkmeump8BZPZ2OLDTXBBYANcki28f0fDxzCflDwnWT4orGNITg2RIufyYxWBKkPe8CxKVrTZD20KuBf1EoRVinES7oIRRmw1aBUuKCiSFLApa6BoIYjOx1fQGdrV0t1bavr2mPdsqm1SlbNQdxeb9-Q98maNTqyqN0HDxh8EMdOabDW8SthE2QQI2MEmf7VTUbfa0WNAhO-Xwq63623BpTyAvYDMyfMiA" alt="Nitro Cold Brew" class="menu-card-image">
+                <div class="menu-card polaroid-frame">
+                    <div class="legend-badge">
+                        <span class="material-symbols-outlined">pan_tool_alt</span> Local Legend Status
                     </div>
-                    <div class="menu-card-info border-b-primary">
-                        <h3 class="text-headline">Nitro Cold Brew</h3>
-                        <span class="text-headline text-highlight">$3.89</span>
+                    <div class="menu-card-image-wrap polaroid-image-wrap">
+                        <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Homemade Corned Beef Hash" class="menu-card-image vintage-sepia">
+                        <div class="neon-price-bubble" style="bottom: 1rem; right: 1rem;">$15.00</div>
                     </div>
-                    <p class="menu-card-tags text-label">Nitrogen Infused • Smoother Consistency</p>
+                    <div class="menu-card-info" style="border: none; margin-top: 1rem;">
+                        <h3 class="brand-block-font" style="font-size: 1.25rem;">Homemade Corned Beef Hash</h3>
+                    </div>
+                    <p class="text-body" style="font-size: 0.95rem; line-height: 1.4; opacity: 0.9;">"The Real Deal. Slow-cooked for 10 hours and hand-shredded. No cans, no shortcuts—just the best hash in the state."</p>
                 </div>
                 <!-- Item 2 -->
-                <div class="menu-card">
-                    <div class="menu-card-image-wrap">
-                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_bNfl6F-30gD37R7PfBg5deCxHQ2GT0hPa_8LC6ucEUan2vfn2HqehyEUdWeHo1faHCXXZbi6RoZ2bcwRibALaZv4mqqcPtrveNgb0QyOxQIp70y8gDgenc7VfPZa371diTzaO1aFi5MNYMuYrpKltlMuIIYhLWkw4gQqqzjj0q2Qy9K-Xwa9j-05O52Ndvi27zkKu4_pEGpOk2-mJLiTM7_MOUW_oxVFXnBNibBOb4SI-xDGSj2MdLDglCSv7dzBD8kTiXelp2A" alt="Chicken Bacon Ranch Wrap" class="menu-card-image">
+                <div class="menu-card polaroid-frame">
+                    <div class="legend-badge">
+                        <span class="material-symbols-outlined">pan_tool_alt</span> Local Legend Status
                     </div>
-                    <div class="menu-card-info border-b-primary">
-                        <h3 class="text-headline">Chicken/Bacon Wrap</h3>
-                        <span class="text-headline text-highlight">$6.75</span>
+                    <div class="menu-card-image-wrap polaroid-image-wrap">
+                        <img src="https://images.unsplash.com/photo-1528207776546-32248a4c05a4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Root Beer Float Pancakes" class="menu-card-image vintage-sepia">
+                        <div class="neon-price-bubble" style="bottom: 1rem; right: 1rem;">$12.00</div>
                     </div>
-                    <p class="menu-card-tags text-label">Grilled Chicken • Mozzarella • Ranch</p>
+                    <div class="menu-card-info" style="border: none; margin-top: 1rem;">
+                        <h3 class="brand-block-font" style="font-size: 1.25rem;">Root Beer Float Pancakes</h3>
+                    </div>
+                    <p class="text-body" style="font-size: 0.95rem; line-height: 1.4; opacity: 0.9;">"A Village Diner Original. Fluffy pancakes with that nostalgic root beer kick. It sounds crazy until you take the first bite."</p>
                 </div>
                 <!-- Item 3 -->
-                <div class="menu-card">
-                    <div class="menu-card-image-wrap">
-                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuABNKwfJCYHbA3_I07xHjrwlyZq5Pe7VGodrE5SC4atQgzisQNhP4VUUDvwwE9shTQoY4S1M6M0mUuep7bfMkF_8lhuBJk7pKYCwsVHVrvNqWg_EF93hVa7w8fGApx2Qq8QKpBeh399fpUt0NuzmMtJDyhtyUw6oshcb10yMY3oCwMl83-cWSkvWl3fL-xMYl2zUZprMafeoXLYwU4ljQNELuGyej3fcAe8ZqAMbn0c4Br9Sm5IaD_IsIcJz_lB3HgrW3UajpXUNPQ" alt="Breakfast Burrito" class="menu-card-image">
+                <div class="menu-card polaroid-frame">
+                    <div class="legend-badge">
+                        <span class="material-symbols-outlined">pan_tool_alt</span> Local Legend Status
                     </div>
-                    <div class="menu-card-info border-b-primary">
-                        <h3 class="text-headline">Breakfast Burrito</h3>
-                        <span class="text-headline text-highlight">$6.00</span>
+                    <div class="menu-card-image-wrap polaroid-image-wrap">
+                        <img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Matt's Favorite Chicken Sandwich" class="menu-card-image vintage-sepia">
+                        <div class="neon-price-bubble" style="bottom: 1rem; right: 1rem;">$13.00</div>
                     </div>
-                    <p class="menu-card-tags text-label">2 Farm Eggs • Cheese • Bacon/Sausage</p>
+                    <div class="menu-card-info" style="border: none; margin-top: 1rem;">
+                        <h3 class="brand-block-font" style="font-size: 1.25rem;">Matt's Favorite Chicken Sandwich</h3>
+                    </div>
+                    <p class="text-body" style="font-size: 0.95rem; line-height: 1.4; opacity: 0.9;">"The Lunch Legend. Perfectly seasoned chicken, melted cheese, and a cult following. The sandwich that put our grill on the map."</p>
                 </div>
             </div>
             
             <div style="text-align: center; margin-top: 4rem;">
-                <a href="menu.html" class="btn btn-pill border-b-primary text-headline" style="text-decoration: none; padding: 1rem 3rem; border: 2px solid var(--color-espresso); color: var(--color-espresso);">View Full Menu</a>
+                <a href="menu.html" class="btn btn-pill btn-retro-red text-headline" style="padding: 1rem 3rem; text-decoration: none;">View Full Menu</a>
             </div>
         </section>
 
